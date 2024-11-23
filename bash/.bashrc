@@ -158,7 +158,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # ---- Oh My Posh ----
 
-eval "$(oh-my-posh init bash)"
+eval "$(oh-my-posh init bash --config ~/jandedobbeleer.omp.json)"
 
 # ---- FZF -----
 
@@ -214,3 +214,11 @@ _fzf_comprun() {
     *) fzf --preview "$show_file_or_dir_preview" "$@" ;;
     esac
 }
+
+# ----- Bat (better cat) -----
+
+export BAT_THEME=tokyonight_night
+
+# ---- Eza (better ls) -----
+
+alias ls="eza --icons=always"
