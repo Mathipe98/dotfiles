@@ -156,10 +156,14 @@ export PATH=$BUN_INSTALL/bin:$PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
 . "/home/mathipe/.deno/env"
 
+# ---- Oh My Posh ----
+
+eval "$(oh-my-posh init bash)"
+
 # ---- FZF -----
 
 # Set up fzf key bindings and fuzzy completion
-eval "$(fzf --zsh)"
+eval "$(fzf --bash)"
 
 # --- setup fzf theme ---
 fg="#CBE0F0"
