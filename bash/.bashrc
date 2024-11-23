@@ -221,4 +221,4 @@ export BAT_THEME=tokyonight_night
 
 # ---- Eza (better ls) -----
 
-alias ls="eza --icons=always"
+alias ls="eza --icons=always --color=always --long --git --no-filesize --no-time --no-user --no-permissions"
